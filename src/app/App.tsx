@@ -1,8 +1,9 @@
 import "./styles/global.scss";
 import "./styles/theme.scss";
 import { useTheme } from "shared/features/theme";
-import { ReactRouter } from "./config/routerConfig/routerConfig";
+import { RouterProvider } from "./routes";
+
 export const App = () => {
     useTheme();
-    return <ReactRouter />;
+    return <RouterProvider />;
 };
